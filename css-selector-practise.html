@@ -16,13 +16,9 @@
       color: red;
     }
 
-    p.a[tabindex="1"] {
+    /* p.a[tabindex="1"] {
       color: black;
-    }
-
-    p.a[tabindex="1"]:hover {
-      color: red;
-    }
+    } */
 
     p.a[tabindex="1"]:focus {
       color: blue;
@@ -32,6 +28,10 @@
       color: green;
     }
 
+    p.a[tabindex="1"]:hover {
+      color: red;
+    }
+
     .a.c {
       color: red;
     }
@@ -39,6 +39,7 @@
     p.a.c>span :first-child {
       color: green;
     }
+
     /* p.a.c>span>:first-child {
       color: green;
     } */
@@ -104,7 +105,12 @@
       color: #bfa;
     }
 
-    .prime>ul li:nth-child() {
+    .prime>ul li:nth-child(1),
+    .prime>ul li:nth-child(2n+4),
+    .prime>ul li:nth-child(3n+6),
+    .prime>ul li:nth-child(5n+25),
+    .prime>ul li:nth-child(7n+49)
+     {
       color: #f00;
     }
   </style>
