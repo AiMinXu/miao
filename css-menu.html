@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .box {
+      display: flex;
+      background-color: #23272e;
+    }
+
+    .icon {
+      background: url(https://img.icons8.com/color/344/visual-studio-code-2019.png);
+      height: 50px;
+      width: 50px;
+      background-position: center;
+      background-size: contain;
+      /* margin-bottom: -10px; */
+      /* border: 1px solid;
+      background-color: pink; */
+    }
+
+    .mainMenu>li {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 32px;
+      color: #959dab;
+      background-color: #23272e;
+      /* border: 1px solid; */
+      /* background-color: #23272e; */
+    }
+
+    ul li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .mainMenu ul {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border-radius: .4em;
+      padding: .5em 0;
+    }
+
+    .mainMenu ul ul {
+      left: 100%;
+      top: -.5em;
+    }
+
+    .mainMenu li:hover>ul {
+      display: block;
+    }
+
+    .mainMenu li ul li {
+      padding: 0 100px 0 10px;
+    }
+
+    .mainMenu li:hover {
+      background-color: #34383d;
+    }
+
+    .mainMenu li li>span {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+    .hr {
+      border-bottom: 1px solid;
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="icon"></div>
+    <ul class="mainMenu">
+      <li>文件(F)
+        <ul>
+          <li>新建文件<span>Ctrl+N</span></li>
+          <li class="hr"></li>
+          <li>新建文本</li>
+          <li>打开最近文件</li>
+          <li>保存</li>
+          <li>另存为<span>></span>
+            <ul>
+              <li>html</li>
+              <li>js</li>
+              <li>css</li>
+            </ul>
+          </li>
+          <li>退出</li>
+        </ul>
+      </li>
+      <li>编辑(E)
+        <ul>
+          <li>撤销</li>
+          <li>粘贴</li>
+          <li>复制</li>
+          <li>查找</li>
+          <li>替换</li>
+        </ul>
+      </li>
+      <li>选择(S)</li>
+      <li>查看(V)</li>
+      <li>转到(G)</li>
+      <li>运行(R)</li>
+      <li>查看(T)</li>
+      <li>帮助(H)</li>
+    </ul>
+  </div>
+</body>
+
+</html>
