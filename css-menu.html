@@ -12,27 +12,37 @@
       margin: 0;
     }
 
-    .box {
-      display: flex;
+    header {
+      display: block;
+      /* vertical-align: middle; */
       background-color: #23272e;
+      min-width: 900px;
+      white-space: nowrap;
+
     }
 
     .icon {
+      display: inline-block;
       background: url(https://img.icons8.com/color/344/visual-studio-code-2019.png);
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       background-position: center;
       background-size: contain;
-      /* margin-bottom: -10px; */
+      margin-bottom: -8px;
       /* border: 1px solid;
       background-color: pink; */
     }
+    .mainMenu {
+      display: inline-block;
+      /* margin-top: 20px; */
+    }
+
 
     .mainMenu>li {
       display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-      margin: 0 10px;
+      text-align: left;
+      /* margin: 0 10px; */
+      padding: 0 0.5rem;
     }
 
     ul {
@@ -91,43 +101,43 @@
 </head>
 
 <body>
-  <div class="box">
+  <header>
     <div class="icon"></div>
-    <ul class="mainMenu">
-      <li>文件(F)
-        <ul>
-          <li>新建文件<span>Ctrl+N</span></li>
-          <li class="hr"></li>
-          <li>新建文本</li>
-          <li>打开最近文件</li>
-          <li>保存</li>
-          <li>另存为<span>></span>
-            <ul>
-              <li>html</li>
-              <li>js</li>
-              <li>css</li>
-            </ul>
-          </li>
-          <li>退出</li>
-        </ul>
-      </li>
-      <li>编辑(E)
-        <ul>
-          <li>撤销</li>
-          <li>粘贴</li>
-          <li>复制</li>
-          <li>查找</li>
-          <li>替换</li>
-        </ul>
-      </li>
-      <li>选择(S)</li>
-      <li>查看(V)</li>
-      <li>转到(G)</li>
-      <li>运行(R)</li>
-      <li>查看(T)</li>
-      <li>帮助(H)</li>
-    </ul>
-  </div>
+      <ul class="mainMenu">
+        <li>文件(F)
+          <ul>
+            <li>新建文件<span>Ctrl+N</span></li>
+            <li class="hr"></li>
+            <li>新建文本</li>
+            <li>打开最近文件</li>
+            <li>保存</li>
+            <li>另存为<span>></span>
+              <ul>
+                <li>html</li>
+                <li>js</li>
+                <li>css</li>
+              </ul>
+            </li>
+            <li>退出</li>
+          </ul>
+        </li>
+        <li>编辑(E)
+          <ul>
+            <li>撤销</li>
+            <li>粘贴</li>
+            <li>复制</li>
+            <li>查找</li>
+            <li>替换</li>
+          </ul>
+        </li>
+        <li>选择(S)</li>
+        <li>查看(V)</li>
+        <li>转到(G)</li>
+        <li>运行(R)</li>
+        <li>查看(T)</li>
+        <li>帮助(H)</li>
+      </ul>
+  </header>
 </body>
 
 </html>
