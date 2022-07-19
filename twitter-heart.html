@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .class {
+      display: flex;
+      margin: auto;
+      font-size: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .love {
+      display: inline-block;
+      background-image: url(./1.png);
+      background-position: 0 0;
+      height: 100px;
+      width: 100px;
+    }
+
+    .love:active {
+      transition: background-position 1.3s steps(28, end);
+      background-position: -2800px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="class">长按1s<span class="love"></span></div>
+</body>
+
+</html>
