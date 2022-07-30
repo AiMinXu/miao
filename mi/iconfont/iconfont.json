@@ -1,0 +1,93 @@
+{
+  "id": "3551412",
+  "name": "xiaomi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8760186",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "10838475",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "49355",
+      "name": "天猫购物车 ",
+      "font_class": "gouwuche2",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "401024",
+      "name": "play-alt",
+      "font_class": "playalt",
+      "unicode": "e805",
+      "unicode_decimal": 59397
+    },
+    {
+      "icon_id": "411687",
+      "name": "15",
+      "font_class": "15",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "592804",
+      "name": "7",
+      "font_class": "7",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "7275370",
+      "name": "Location",
+      "font_class": "Location",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "10931720",
+      "name": "message-2-fill",
+      "font_class": "message--fill",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "11275196",
+      "name": "circle-arrow-right",
+      "font_class": "circle-arrow-right",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    },
+    {
+      "icon_id": "11474278",
+      "name": "gift",
+      "font_class": "gift",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "13243808",
+      "name": "fdoi-circle-arrow-right",
+      "font_class": "fdoi-circle-arrow-right",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "19899601",
+      "name": "tool",
+      "font_class": "tool",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    }
+  ]
+}
