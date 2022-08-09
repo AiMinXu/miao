@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="x" id="ch0103/01">
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入b"))
+    const res = a + b
+    console.log(res);
+  </script>
+
+  <script type="x" id="ch0103/02">
+     const a = Number(prompt("请输入a"))
+     const b = Number(prompt("请输入b"))
+     const c = Number(prompt("请输入c"))
+     const res = (a + b) * c
+     console.log(res);
+  </script>
+  <script type="x" id="ch0103/03">
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入b"))
+    const c = Number(prompt("请输入c"))
+    const res = (a + b) / c
+    console.log(parseInt(res));
+  </script>
+  <script type="x" id="ch0103/04">
+     const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入b"))
+    const res1 = a / b
+    const res2 = a  %   b
+    console.log(parseInt(res1));
+    console.log(res2);
+  </script>
+  <script type="x" id="ch0103/05">
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入b"))
+    const res = (a /b)
+    const res1 = res.toFixed(9)-parseInt(res)
+    console.log(res1);
+  </script>
+  <script type="x" id="ch0103/06">
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入b"))
+    const res1 = (b / a)
+    const res2 = (res1 - parseInt(res1)).toFixed(5)*100+ "%"
+    console.log(res2);
+  </script>
+  <script type="x" id="ch0103/07">
+    const x = Number(prompt("请输入a"))
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入a"))
+    const c = Number(prompt("请输入a"))
+    const d = Number(prompt("请输入a"))
+    const f = a* (x**3) + b *(x*x) +  c*x + d
+    const res = f.toFixed(7)
+    console.log(res);
+  </script>
+  <script type="x" id="ch0103/08">
+    const F = Number(prompt("请输入F"))
+    const C = 5 * (F-32) / 9
+    const res = C.toFixed(5)
+    console.log(res);
+  </script>
+  <script type="x" id="ch0103/09">
+    const PI = 3.14159
+    const r = Number(prompt("请输入r"))
+    const res1 = 2 * r
+    const res2 = 2 * PI * r
+    const res3 = PI * r * r
+    console.log(res1.toFixed(4));
+    console.log(res2.toFixed(4));
+    console.log(res3.toFixed(4));
+  </script>
+  <script type="x" id="ch0103/10">
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入a"))
+    const res = 1/(1/a + 1/b)
+    console.log(res.toFixed(2));
+  </script>
+  <script type="x" id="ch0103/11">
+    const a = Number(prompt("请输入a"))
+    const b = Number(prompt("请输入a"))
+    const res = (a-(parseInt(a/b)*b))
+    console.log(res.toFixed(4));
+  </script>
+  <script type="x" id="ch0103/12">
+    const a = Number(prompt("请输入a"))
+    const res = 4/3*3.14*a**3
+    console.log(res.toFixed(2));
+  </script>
+  <script type="x" id="ch0103/13">
+    const x = Number(prompt("请输入a"))
+    const a = parseInt(x/100)
+    const b = parseInt((x%100)/10)
+    const c = x%10
+    const res = `${c}${b}${a}`
+    console.log(res);
+  </script>
+  <script type="x" id="ch0103/14">
+ const h = Number(prompt("请输入r"))
+ const r = Number(prompt("请输入h"))
+ const Pi = 3.14159
+ const res = 20*1000/(Pi * r * r * h)
+ const res1 = Math.ceil(res)
+ console.log(res1);
+  </script>
+  <script type="x" id="ch0103/15">
+const n = Number(prompt("请输入r"))
+const x = Number(prompt("请输入r"))
+const y = Number(prompt("请输入r"))
+const res1 = y / x
+const res2 = n - Math.ceil(res1)
+console.log(res2);
+  </script>
+  <script type="x" id="ch0103/16">
+const a1 = Number(prompt())
+const a2 = Number(prompt())
+const b1 = Number(prompt())
+const b2 = Number(prompt())
+const res = Math.sqrt((b1-a1)**2  + (b2-a2)**2)
+console.log(res.toFixed(3));
+  </script>
+  <script type="x" id="ch0103/17">
+    const x1 = Number(prompt())
+    const y1 = Number(prompt())
+    const x2 = Number(prompt())
+    const y2 = Number(prompt())
+    const x3 = Number(prompt())
+    const y3 = Number(prompt())
+    const res =(1/2)*((x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1))
+    console.log(res.toFixed(2));
+  </script>
+  <script type="x" id="ch0103/18">
+    const x1 = Number(prompt())
+    const x2 = Number(prompt())
+    const n = Number(prompt())
+    const d = x2 - x1
+    const res =x1+(n-1)*d
+    console.log(res);
+  </script>
+  <script type="x" id="ch0103/19">
+    const x1 = Number(prompt())
+    const x2 = Number(prompt())
+    const res = x1 * x2
+    console.log(res);
+  </script>
+  <script type="x" id="ch0103/20">
+    const x = Number(prompt())
+    console.log(2**x);
+  </script>
+  <script type="x" id="ch0104/01">
+    const n= Number(prompt())
+    if(n>0){
+      console.log("positive");
+    }else if(n === 0){
+      console.log("zero");
+    }else{
+      console.log("negative");
+    }
+  </script>
+  <script type="x" id="ch0104/02">
+    const x= Number(prompt())
+    if(x>0){
+      console.log(x.toFixed(2));
+    }else{
+      const x1 = (x.toFixed(2)).toString().slice(1)
+      console.log(x1);
+    }
+    </script>
+  <script type="x" id="ch0104/03">
+    const x= Number(prompt())
+    if ((x % 2) === 0) {
+      console.log("even");
+    }else{
+      console.log("odd");
+    }
+    </script>
+  <script type="x" id="ch0104/04">
+    const x = (prompt())
+    //字符转换为编码数字charCodeAt()
+    // const res = x.charCodeAt()
+    if (x.charCodeAt() % 2 !== 0) {
+      console.log("YES");
+    } else {
+      console.log("NO");
+    }
+    </script>
+  <script type="x" id="ch0104/05">
+    const x= Number(prompt())
+    const y= Number(prompt())
+    if (x > y) {
+      console.log(">");
+    } else if(x === y){
+      console.log("=");
+    }else{
+      console.log("<");
+    }
+    </script>
+  <script type="x" id="ch0104/06">
+    const x= Number(prompt())
+    if (x>10 && x<100) {
+      console.log(1);
+    }else{
+      console.log(0);
+    }
+    </script>
+  <script type="x" id="ch0104/07">
+    const x= Number(prompt())
+    const y= Number(prompt())
+    if (x >= 10 || y >=20) {
+      console.log(1);
+    }else{
+      console.log(0);
+    }
+    </script>
+  <script type="X" id="ch0104/08">
+    const x= Number(prompt())
+    if( x % 3 === 0 && x % 5 ===0 ){
+      console.log("YES");
+    }else{
+      console.log("NO");
+    }
+    </script>
+  <script type="" id="ch0104/09">
+    const x= Number(prompt())
+    if () {
+
+    }else if(){
+
+    }
+    </script>
+  <script type="x" id="ch0104/10">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/11">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/12">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/13">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/14">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/15">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/16">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/17">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/18">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/19">
+    const x= Number(prompt())
+    </script>
+  <script type="x" id="ch0104/20">
+    const x= Number(prompt())
+    </script>
+</body>
+
+</html>
