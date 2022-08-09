@@ -228,47 +228,153 @@ console.log(res.toFixed(3));
       console.log("NO");
     }
     </script>
-  <script type="" id="ch0104/09">
+  <script type="x" id="ch0104/09">
     const x= Number(prompt())
-    if () {
-
-    }else if(){
-
+    if (x % 3 === 0 && x % 5 ===0 && x % 7 === 0 ) {
+      console.log("3 5 7");
+    }else if(x % 3 === 0 && x % 5 === 0 && x % 7 !== 0){
+      console.log("3 5");
+    }else if(x % 3 === 0 && x % 5 !== 0 && x % 7 === 0){
+      console.log("3 7");
+    }else if(x % 3 !== 0 && x % 5 === 0 && x % 7 === 0){
+      console.log("5 7");
+    }else if(x % 3 === 0 && x % 5 !== 0 && x % 7 !== 0 ){
+      console.log("3");
+    }else if(x % 3 !== 0 && x % 5 === 0 && x % 7 !== 0 ){
+      console.log("5");
+    }else if(x % 3 !== 0 && x % 5 !== 0 && x % 7 === 0 ){
+      console.log("7");
+    }else{
+      console.log("n");
     }
     </script>
   <script type="x" id="ch0104/10">
     const x= Number(prompt())
+    const y= Number(prompt())
+    if (x < 60 || y < 60) {
+      console.log(1);
+    } else {
+      console.log(0);
+    }
     </script>
-  <script type="x" id="ch0104/11">
+  <script type="X" id="ch0104/11">
     const x= Number(prompt())
+
+    if (x === 3 || x === 5 || x === 1) {
+      console.log("NO");
+    }else{
+      console.log("YES");
+    }
     </script>
   <script type="x" id="ch0104/12">
     const x= Number(prompt())
+    if ((x/1.2) >(x/3+50)) {
+      console.log("Bike");
+    } else if((x/1.2) ===(x/3+50)){
+      console.log("All");
+    }else{
+      console.log("Walk");
+    }
     </script>
   <script type="x" id="ch0104/13">
     const x= Number(prompt())
+    if ( 0 <= x < 5) {
+      const y1 = y=-x+2.5
+      console.log(y1.toFixed(3));
+    } else if (5 <= x < 10){
+      const y2 = 2-1.5*(x-3)*(x-3)
+      console.log(y2.toFixed(3));
+    }else if(10 <= x < 20){
+      const y3 = x/2 - 1.5
+      console.log(y3.toFixed(3));
+    }
     </script>
   <script type="x" id="ch0104/14">
-    const x= Number(prompt())
+      const x = Number(prompt())
+      const c = (prompt())
+      if (x <= 1000 && c === "n") {
+        console.log(8);
+      }else if (x <= 1000 && c === "y") {
+        console.log(8+5);
+      }else if (x > 1000 && c==="n") {
+        const c = Math.ceil((x - 1000) / 500)
+        console.log(8 + 4*c);
+      }else if (x > 1000 && c==="y") {
+        const c = Math.ceil((x - 1000) / 500)
+        console.log(8 + 5 + 4*c);
+      }
     </script>
   <script type="x" id="ch0104/15">
     const x= Number(prompt())
+    const y= Number(prompt())
+    const z= Number(prompt())
+    console.log(Math.max(x,y,z));
     </script>
   <script type="x" id="ch0104/16">
-    const x= Number(prompt())
+      const a= Number(prompt())
+      const b= Number(prompt())
+      const c= Number(prompt())
+      if (a+b>c&&a+c>b&&b+c>a) {
+        console.log("yes");
+      }else{
+        console.log("no");
+      }
     </script>
   <script type="x" id="ch0104/17">
     const x= Number(prompt())
+    x % 4 === 0 || x % 100 ===0 ? console.log("Y") : console.log("N");
     </script>
   <script type="x" id="ch0104/18">
     const x= Number(prompt())
+    const y= Number(prompt())
+    if (Math.abs(x) <= 1 && Math.abs(y) <= 1) {
+     console.log("yes");
+    }else{
+      console.log("no");
+    }
     </script>
-  <script type="x" id="ch0104/19">
+  <script type="X" id="ch0104/19">
     const x= Number(prompt())
+    const y= Number(prompt())
+    const z= (prompt())
+    if (z !== "+" && z !== "-" && z !== "*" && z !== "/" ) {
+      console.log("Invalid operator!");
+    }else if(y === 0 && z === "/"){
+      console.log("Divided by zero!");
+    }else if (z === "+") {
+      console.log(x + y);
+    }else if (z === "-"){
+      console.log(x - y);
+    }else if(z === "*"){
+      console.log(x *   y);
+    }else if(z === "/"){
+      console.log(x / y);
+    }
     </script>
-  <script type="x" id="ch0104/20">
-    const x= Number(prompt())
+    <script type="x" id="ch0104/20">
+        const a= Number(prompt())
+        const b= Number(prompt())
+        const c= Number(prompt())
+        if (b**2 === 4 * a * c) {
+          const res1 = (-b + Math.sqrt(b*b-4*a*c))/(2*a)
+          console.log(`x1=x2=${res1.toFixed(5)}`);
+        }else if (b**2 > 4 * a * c) {
+          const res2 = (-b + Math.sqrt(b*b-4*a*c))/(2*a)
+          const res3 = (-b - Math.sqrt(b*b-4*a*c))/(2*a)
+          console.log(`x1=${res2.toFixed(5)};x2=${res3.toFixed(5)}`);
+        }else {
+          const s = -b / (2*a)
+          const x = Math.sqrt(4*a*c-b*b) / (2*a)
+          console.log(`x1=${s.toFixed(5)}+${x.toFixed(5)}i;x2=${s.toFixed(5)}-${x.toFixed(5)}i`);
+        }
     </script>
+    <script type="" id="ch0104/21">
+  const x= Number(prompt())
+  const y= Number(prompt())
+  const z= Number(prompt())
+  const res = x - Math.ceil(z/y)
+  console.log(res);
+  </script>
 </body>
 
 </html>
