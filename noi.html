@@ -270,7 +270,7 @@ console.log(res.toFixed(3));
     console.log("YES");
   }
   </script>
-  <script type="x" id="ch0104/12">
+<script type="x" id="ch0104/12">
     const x= Number(prompt())
     if ((x/1.2) >(x/3+50)) {
       console.log("Bike");
@@ -425,7 +425,7 @@ console.log(`$${a/12}`);
     }
     console.log((sum/x).toFixed(4));
     </script>
-    <script type="x" id="ch0105/04">
+<script type="x" id="ch0105/04">
   let x = Number(prompt())
   let sum = 0
   for (let i = x; i > 0 ; i--) {
@@ -574,25 +574,24 @@ console.log((x-2)*180-sum);
         count += n
         if(count >= sum) {
           console.log(m);
-
           break
         }
         sum += k*0.01*sum
       }
       </script>
 <script type="x1" id="ch0105/17">
-                                          let k= Number(prompt())
-                                          let arr = []
-                                          if(k === 1 || k === 2){
-                                            console.log(1);
-                                          }else{
-                                            arr[0] = 1
-                                            arr[1] = 2
-                                            for(let i = 2; i <= k ;i++){
-                                              arr[i] = arr [i-1] + arr[i - 2]
-                                            }
-                                            console.log(arr[k-2]);
-                                          }
+let k= Number(prompt())
+let arr = []
+if(k === 1 || k === 2){
+console.log(1);
+}else{
+arr[0] = 1
+arr[1] = 2
+for(let i = 2; i <= k ;i++){
+arr[i] = arr [i-1] + arr[i - 2]
+}
+console.log(arr[k-2]);
+}
           </script>
 <script type="x" id="ch0105/18">
       let n = Number(prompt())
@@ -612,7 +611,7 @@ console.log((x-2)*180-sum);
         }
       }
     </script>
-    <script type="x" id="ch0105/19">
+<script type="x" id="ch0105/19">
                 let n= Number(prompt())
                 let sum = 0
                 for(let i = 0;i < n; i++){
@@ -834,72 +833,228 @@ for(let i = 0;i<9999;i++){
       }
     }
 </script>
-<script type="" id="ch0105/31">
-  let n= Number(prompt())
-  let m= Number(prompt())
-  let z = []
-  let w = []
+<script type="x" id="ch0105/31">
+  let n = Number(prompt())
+  let m = Number(prompt())
+  let x = 1
+  let arr = []
+  let res = []
   for (let i = 0; i < n; i++) {
-    z[i] = 1
+    arr.push(1)
   }
-  for (let i = 0; i < m; i++) {//外层次数
-    for (let j = 0; j < n; i++) {//灯的变化
-      if( (j + 1)%(i + 1) === 0){
-        z[j] *= -1
+  while (x <= m) {
+    for(let i = 0;i<x;i += x){//i+=x  表示步长
+        arr[i] = 1-arr[i]
+      }
+      x++
+  }
+  for(let i = 0; i < n; i++){
+    if(arr[i] === 0 ){
+      res.push(i)
+    }
+  }
+ console.log(res.join(','));
+</script>
+<script type="x" id="ch0105/32">
+  let n = Number(prompt())
+  let p = 1
+  let q = 1
+  let sum = 0
+  for(let i = 0;i< n ;i++){
+    let temp = q //定义零时变量存储q
+    q = q + p
+    p = temp
+    sum += (q/p)
+  }
+  console.log(sum.toFixed(4));
+</script>
+<script type="x" id="ch0105/33">
+  let x= Number(prompt())
+  // let sum = 0
+  let num = 0
+  for (let i = 1; i <= x; i++) {
+    num += ((-1)**(i-1))/i
+  }
+  console.log(num.toFixed(4));
+</script>
+<script type="x" id="ch0105/34">
+  let x= Number(prompt())
+  let sum = 1
+  let n = 1
+  for (let i = 2; i <= x; i++) {
+    n *= i
+    sum += n
+  }
+  console.log(sum);
+</script>
+<script type="x" id="ch0105/35">
+const m= Number(prompt())
+let x = 1
+let sum = 2
+for (let i = 2; i <= m; i++) {
+  x *= i
+  sum += 1/x
+}
+console.log(sum.toFixed(10));
+</script>
+<script type="x" id="ch0105/36">
+  let x= Number(prompt())
+  let n= Number(prompt())
+  let temp = x
+  let sum = 1
+  for (let i = 1; i <= n; i++) {
+    x = temp
+    x = x ** (i)
+    sum += x
+  }
+
+  console.log(sum.toFixed(2));
+</script>
+<script type="x" id="ch0105/37">
+  let m= Number(prompt())
+  let n= Number(prompt())
+  let x= Number(prompt())
+  let g = 0
+  while(x > 0){
+    x -= n
+    g = n
+    n += Math.floor(g/n)
+    g = 0
+  }
+  console.log(n);
+</script>
+<script type="x" id="ch0105/38">
+let x= Number(prompt())
+for (let i = 0; i < x; i++) {
+  let y = +prompt()
+  if( y === 0 ){
+    let z = +prompt()
+    console.log(0);
+  }else{
+    let s = y//声明变量用于保证下次输入变量不会被影响
+     for (let j = 0; j <= s ; j++) {
+      let a = +prompt()
+      if( y !== 0){
+        console.log(y * a);
+      }
+      y--
+     }
+  }
+
+}
+
+
+</script>
+<script type="x" id="ch0105/39">
+  let x= +(prompt())
+  let sumT = 0
+  let arr = []
+  for (let i = 1; i <= x; i++) {
+    arr[i] = i
+    if(arr[i] % 7 === 0 || arr[i].toString().includes('7')){
+      arr[i] = 0
+    }
+    sumT += (arr[i])*(arr[i])
+  }
+  console.log(sumT);
+  </script>
+<script type="x" id="ch0105/40">
+  let x= Number(prompt())
+  let arr = []
+  let c = 0
+  for (let i = 0; i < x; i++) {
+    arr[i] = i+1
+    let f = arr[i].toString().split('')
+    for(let j = 0; j < f.length;j++){
+     if(f[j] === '1'){
+      c += 1
+     }
+    }
+  }
+  console.log(c);
+</script>
+<script type="x" id="ch0105/41">
+// ..取模计算
+          // const x  = Number(prompt())
+          // const y  =  Number(prompt())
+          // let count =  0;
+          // for(let i = x;i<=y;i++){
+          //   let z = i;
+          //   while(z){
+          //     if(z%10===2)count++;
+          //     z = parseInt(z/10)
+          //   }
+          // }
+          // console.log(count);
+          //双层for用数组
+          const x  = Number(prompt())
+          const y  =  Number(prompt())
+          let arr = []
+          let cou = 0
+          for(let i = x; i<=y; i++){
+            arr[i] = i
+            let f = arr[i].toString().split('')
+            for (let j = 0; j < f.length; j++) {
+              if(f[j] === '2'){
+                cou++
+              }
+            }
+          }
+          console.log(cou);
+          </script>
+<script type="x" id="ch0105/42">
+  let h = +prompt();
+  let w = +prompt();
+  let f = prompt();
+  let x = +prompt();
+  let str = '';
+  if (x === 1) {
+    for (let i = 0; i < h; i++) {
+      for (let j = 0; j < w; j++) {
+        str += f;
+      }
+      str += '\n';
+    }
+  }
+
+  if (x === 0) {
+    for (let i = 0; i < h; i++) {
+      for (let j = 0; j < w; j++) {
+        if (i === 0 || i === h - 1) {
+          str += f;
+        } else {
+          if (j === 0 || j === w - 1) {
+            str += f;
+          } else {
+            str += ' ';
+          }
+        }
+      }
+      str += '\n';
+    }
+  }
+
+  console.log(str);
+</script>
+<script type="" id="ch0105/43">
+let x= Number(prompt())
+let y = 0
+for (let i = 1; i < x; i++) {
+  if(x%i === 0){
+    for (let j = 0; j < i; j++) {
+      if(i%j===0){
+
+      }else{
+        if(y < j){
+          y = j+1
+        }
+      }
       }
     }
   }
 
-
+console.log(y);
 </script>
-<script type="x" id="ch0105/32">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/33">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/34">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/35">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/36">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/37">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/38">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/39">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/40">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/41">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/42">
-          const x= Number(prompt())
-          console.log();
-          </script>
-<script type="x" id="ch0105/43">
-          const x= Number(prompt())
-          console.log();
-          </script>
 <script type="x" id="ch0105/44">
           const x= Number(prompt())
           console.log();
