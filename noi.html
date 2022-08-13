@@ -833,26 +833,25 @@ for(let i = 0;i<9999;i++){
       }
     }
 </script>
-<script type="x" id="ch0105/31">
+<script type="" id="ch0105/31">
   let n = Number(prompt())
-  let m = Number(prompt())
+  let times = Number(prompt())
   let x = 1
-  let arr = []
   let res = []
+  let arr = []
   for (let i = 0; i < n; i++) {
     arr.push(1)
   }
-  while (x <= m) {
-    for(let i = 0;i<x;i += x){//i+=x  表示步长
-        arr[i] = 1-arr[i]
+  for (let i = 1; i < times; i++) {
+    for (let j = 1; j < n; j++) {
+      if(i%j===0){
+        arr[i] = arr[i]*(-1)
       }
-      x++
-  }
-  for(let i = 0; i < n; i++){
-    if(arr[i] === 0 ){
-      res.push(i)
     }
   }
+    for(let i = 0; i < n; i++){
+          if(arr[i] === -1 ){res.push(i)}
+    }
  console.log(res.join(','));
 </script>
 <script type="x" id="ch0105/32">
@@ -1002,51 +1001,51 @@ for (let i = 0; i < x; i++) {
           }
           console.log(cou);
           </script>
-<script type="x" id="ch0105/42">
-  let h = +prompt();
-  let w = +prompt();
-  let f = prompt();
-  let x = +prompt();
-  let str = '';
-  if (x === 1) {
-    for (let i = 0; i < h; i++) {
-      for (let j = 0; j < w; j++) {
-        str += f;
-      }
-      str += '\n';
+<script id="ch0105/42" type="">
+
+  let hight = +prompt()
+  let width = +prompt()
+  let sign = prompt()
+  let flag = +prompt()
+  let res = ''
+  if(flag === 1){
+    for (let i = 1; i <= hight; i++) {
+      for (let j = 1; j <= width; j++) {
+        res += sign
+    }
+    res += '\n'
     }
   }
 
-  if (x === 0) {
-    for (let i = 0; i < h; i++) {
-      for (let j = 0; j < w; j++) {
-        if (i === 0 || i === h - 1) {
-          str += f;
-        } else {
-          if (j === 0 || j === w - 1) {
-            str += f;
-          } else {
-            str += ' ';
-          }
+  if(flag === 0){
+    for (let i = 1; i <= hight; i++) {
+      for (let j = 1; j <= width; j++) {
+      if(i===1 || i===hight){
+        res += sign
+      }else{
+        if(j===1 || j===width){
+          res += sign
+        }else{
+          res += ' '
         }
       }
-      str += '\n';
+    }
+    res += '\n'
     }
   }
-
-  console.log(str);
+  console.log(res);
 </script>
-<script type="" id="ch0105/43">
+<script type="x" id="ch0105/43">
 let x= Number(prompt())
 let y = 0
 for (let i = 1; i < x; i++) {
   if(x%i === 0){
-    for (let j = 0; j < i; j++) {
+    for (let j = 0; j <= i; j++) {
       if(i%j===0){
 
       }else{
-        if(y < j){
-          y = j+1
+        if(y < i){
+          y = i
         }
       }
       }
@@ -1056,12 +1055,200 @@ for (let i = 1; i < x; i++) {
 console.log(y);
 </script>
 <script type="x" id="ch0105/44">
-          const x= Number(prompt())
-          console.log();
-          </script>
+  let x = Number(prompt('输入数字'))
+  let q = 0 //次数变量
+  let w = 1 //整数
+  let e = 0 //输出数字
+  while(q<x){
+    let r = 0
+    for (let i = 1; i <= w; i++) {
+     if(w%i===0){
+      r++
+     }
+    }
+    if(r===2){
+      q++
+    }
+    e=w
+    w++
+  }
+  console.log(e);
+</script>
 <script type="x" id="ch0105/45">
-          const x= Number(prompt())
-          console.log();
-          </script>
+  // const x= Number(prompt())
+  // let sum = 0
+  // let g = 1 //每天工资
+  // let d = 0 //收到每天工资的天数
+  // for (let i = 0; i < x; i++) {
+  //   sum += g
+  //   d++
+  //   if(d===g){
+  //     d=0
+  //     g++
+  //   }
+  // }
+  let x = +prompt()
+  let sum = 0
+  for (let i = 1; i <= x; i++) {
+    sum += i*i
+    x -= i
+  }
+  console.log(sum);
+</script>
+<script type="x" id="narcissistic">
+  const x = prompt()
+  const y = x.length
+  if(x.charAt(y-1)**3 + x.charAt(y-2)**3 + x.charAt(y-3)**3 === Number(x)){
+    console.log("YES");
+  }else{
+    console.log("NO");
+  }
+</script>
+<script type="x" id="narcissistics">
+  // let n = 100
+  // while(n <= 10000){
+  //   let arr = n.toString().split('')
+  //   let x = arr.length
+  //   if(Number(arr[x-1])**3 +Number(arr[x-2])**3 + Number(arr[x-3])**3 === n){
+  //   console.log(n);
+  //   }
+  //  n++
+  // }
 
+  let n = 100
+  while(n <= 10000){
+    let y = n.toString()
+    let x = y.length
+    if(Number(y[x-1])**3 +Number(y[x-2])**3 + Number(y[x-3])**3 === n){
+    console.log(n);
+    }
+   n++
+  }
+</script>
+<script type="x" id="palindrom">
+  const x = prompt()
+  let y = x*1
+  if(y < 0){
+    console.log("NO");
+  }else if(y === 0){
+    console.log("NO");
+  }else{
+    let arr = x.split('')//字符串转化为数组
+    let z = arr.reverse().join('')*1//转化为数字
+    if(z===y){
+      console.log('YES');
+    }else{
+      console.log('NO');
+    }
+  }
+</script>
+<script type="x" id="weekday">
+  let x = prompt()
+  let y = prompt()
+  let day = new Date(x, y-1,1).getDay()
+  console.log(day);
+</script>
+<script type="x" id="complete-number">
+  let x = +prompt()
+  // let y = 1
+  let m = 0
+  for (let i = 1; i < x; i++) {
+      if(x%i===0){
+        m+=i
+      }else{
+        break
+      }
+    }
+    // console.log(m);
+if(m === x){
+  console.log("YES");
+}else{
+  console.log('NO');
+}
+</script>
+<script type="x" id="complete-numbers">
+  for (let i = 1; i <= 1000; i++) {
+    let m = 0  //记录
+    for (let j = 1; j < i; j++) {
+      if(i%j===0){
+        m += j
+      }
+    }
+    if(m === i){
+      console.log(i);
+    }
+  }
+</script>
+<script type="x" id="prime">
+  let m = +prompt()
+  if(m===1){
+    console.log('NO');
+  }else{
+    for (let i = 2; i < m; i++) {
+      if(m%i===0){
+        console.log("NO");
+      }
+    }
+      console.log('YES');
+  }
+
+</script>
+<script type="x" id="primes">
+let arr = []
+for (let i = 1; i <= 100; i++) {
+  let m=0
+  for (let j = 1; j <= i; j++) {
+    if(i%j === 0 ){
+      m++
+    }
+  }
+  if(m===2){
+    arr.push(i)
+  }
+}
+console.log(arr.join(' '));
+</script>
+<script type="x" id="itob">
+// let m = +prompt()
+// let a
+// let b = Math.abs(m)
+// let s = ''
+// while(b){
+//   a = b%10
+//   s += a
+//   b = parseInt(b/10)
+// }
+// s = s.split('').reverse().join('')
+// if(m >= 0){
+//   console.log(s);
+// }else{
+//   console.log(`-${s}`);
+// }
+let m = +prompt()
+console.log(`${m}`);
+
+</script>
+<script type="x" id="lcf&lcm">
+let x = +prompt()
+let y = +prompt()
+let X = x
+let Y = y
+let c
+while(y){
+  c = x % y
+  x = y
+  y = c
+}
+console.log(x);
+console.log(X*Y/x);
+
+</script>
+<script type="x" id="sqrt">
+  let x = +prompt()
+  let r = x
+  while(r*r>x){
+    r = (r+x/r)/2
+  }
+  console.log(r.toFixed(3));
+</script>
 </html>
