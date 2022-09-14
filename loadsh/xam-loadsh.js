@@ -1,0 +1,3 @@
+var xam = {
+  chunk: function () { }
+}
